@@ -66,6 +66,51 @@
           <div class="modal-backdrop is-hidden" data-modal>
             <div class="modal-window">
               <button class="modal-exit-button" type="button" data-modal-close>&#10006;</button>
+              <div class="modal-window-wrapper">
+                <p class="modal-title">Zostaw swoje dane w formularzu poniżej</p>
+                <form class="modal-form" name="contact-form">
+                  <label class="modal-label" for="contact-name">Imię</label>
+                  <input
+                    class="modal-input-element"
+                    type="text"
+                    id="contact-name"
+                    name="contact-name"
+                  />
+                  <label class="modal-label" for="contact-tel">Telefon</label>
+                  <input
+                    class="modal-input-element"
+                    type="tel"
+                    id="contact-tel"
+                    name="contact-tel"
+                  />
+                  <label class="modal-label" for="contact-mail">Email</label>
+                  <input
+                    class="modal-input-element"
+                    type="email"
+                    id="contact-mail"
+                    name="contact-mail"
+                  />
+                  <label class="modal-label" for="comment">Komentarz</label>
+                  <textarea
+                    class="modal-input-element modal-comment"
+                    type="text"
+                    placeholder="Wprowadź tekst"
+                    id="comment"
+                    name="comment"
+                  ></textarea>
+                  <div class="modal-terms">
+                    <input type="checkbox" id="terms" name="terms" />
+                    <label for="terms"
+                      >Oświadczam, iż akceptuję
+                      <a href="#"><span class="modal-link">Regulamin</span></a> i
+                      <a href="#"><span class="modal-link">Politykę prywatności.</span></a></label
+                    >
+                  </div>
+                  <div class="modal-button">
+                    <button class="modal-submit" type="submit">Wyślij</button>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
