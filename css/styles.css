@@ -330,11 +330,41 @@ body {
 }
 
 .modal-terms {
+  position: relative;
   margin-bottom: 30px;
   font-size: 14px;
   line-height: 1.71em;
   color: var(--alternative-text-color-grey);
   text-align: center;
+}
+
+.modal-terms-checkbox {
+  appearance: none;
+  position: absolute;
+  width: 16px;
+  height: 15px;
+  left: 17px;
+  top: 3px;
+  border: 0.2px solid var(--alternative-text-color-darkgrey);
+  border-radius: 2px;
+}
+
+.modal-checkmark {
+  position: absolute;
+  fill: white;
+  left: 20px;
+  top: 7px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal-terms-checkbox:checked + .modal-checkmark {
+  opacity: 1;
+}
+
+.modal-terms-checkbox:checked {
+  background-color: var(--main-brand-color);
+  border: 0.2px solid var(--main-brand-color);
 }
 
 .modal-link {
