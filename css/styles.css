@@ -229,8 +229,7 @@ body {
 
 .modal-window {
   position: relative;
-  width: 528px;
-  height: 581px;
+  max-width: 528px;
   background: var(--alternative-background-color-white);
   box-shadow: 0px 1px 3px #0000001f, 0px 1px 1px #00000024, 0px 2px 1px #00000033;
   border-radius: 4px;
@@ -255,7 +254,7 @@ body {
 }
 
 .modal-window-wrapper {
-  margin: 40px;
+  padding: 40px;
 }
 
 .modal-form {
@@ -299,7 +298,8 @@ body {
 
 .modal-input-wrapper > svg {
   position: absolute;
-  top: 11px;
+  top: 50%;
+  transform: translateY(-50%);
   left: 12px;
   fill: var(--alternative-text-color-darkgrey);
   transition-property: fill;
@@ -342,9 +342,10 @@ body {
   appearance: none;
   position: absolute;
   width: 16px;
-  height: 15px;
-  left: 17px;
-  top: 3px;
+  height: 16px;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
   border: 0.2px solid var(--alternative-text-color-darkgrey);
   border-radius: 2px;
 }
@@ -352,8 +353,9 @@ body {
 .modal-checkmark {
   position: absolute;
   fill: white;
-  left: 20px;
-  top: 7px;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
   opacity: 0;
   pointer-events: none;
 }
@@ -589,7 +591,7 @@ body {
 
 .footer-section-title {
   padding-top: 12px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
